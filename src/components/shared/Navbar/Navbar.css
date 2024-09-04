@@ -1,0 +1,23 @@
+.desk-nav li .active {
+  color: #a81c51;
+}
+
+.desk-nav li a {
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.desk-nav li a:hover {
+  color: #a81c51;
+}
+
+.drawer-end .drawer-toggle ~ .drawer-content {
+  grid-column-start: none !important;
+}
+
+.mobile-nav li .active {
+  background-color: #a81c51 !important;
+}
