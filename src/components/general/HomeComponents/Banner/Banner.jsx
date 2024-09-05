@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useContext, useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaFacebookF, FaTwitter } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight, FaFacebookF, FaLocationDot, FaPhone, FaTwitter } from "react-icons/fa6";
+import { LuClock } from "react-icons/lu";
+import { MdOutlineEmail } from "react-icons/md";
 import { SlideContext } from "../../../../layout/Root";
 import "./Banner.css";
 
@@ -12,7 +14,7 @@ const Banner = () => {
   const setSlideNo = slideData?.setSlideNo;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  console.log(currentSlide);
+  //   console.log(currentSlide);
 
   const [sliderRef, instanceRef] = useKeenSlider(
     {
@@ -31,40 +33,40 @@ const Banner = () => {
       created() {
         setLoaded(true);
       },
-    }
-    // [
-    //   (slider) => {
-    //     let timeout;
-    //     let mouseOver = false;
-    //     function clearNextTimeout() {
-    //       clearTimeout(timeout);
-    //     }
-    //     function nextTimeout() {
-    //       clearTimeout(timeout);
-    //       if (mouseOver) return;
-    //       timeout = setTimeout(() => {
-    //         slider.next();
-    //       }, 3000);
-    //     }
-    //     slider.on("created", () => {
-    //       // this is to stop autoplay when the mouse enters the slider
-    //       //   slider.container.addEventListener("mouseover", () => {
-    //       //     mouseOver = true;
-    //       //     clearNextTimeout();
-    //       //   });
+    },
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 3000);
+        }
+        slider.on("created", () => {
+          // this is to stop autoplay when the mouse enters the slider
+          //   slider.container.addEventListener("mouseover", () => {
+          //     mouseOver = true;
+          //     clearNextTimeout();
+          //   });
 
-    //       // this is to start autoplay when the mouse leaves the slider
-    //       slider.container.addEventListener("mouseout", () => {
-    //         mouseOver = false;
-    //         nextTimeout();
-    //       });
-    //       nextTimeout();
-    //     });
-    //     slider.on("dragStarted", clearNextTimeout);
-    //     slider.on("animationEnded", nextTimeout);
-    //     slider.on("updated", nextTimeout);
-    //   },
-    // ]
+          // this is to start autoplay when the mouse leaves the slider
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
   );
 
   return (
@@ -78,7 +80,7 @@ const Banner = () => {
             <FaFacebookF />
           </a>
         </div>
-        <div ref={sliderRef} className="keen-slider h-[100dvh] sm:h-[59.375rem] max-h-[930px]">
+        <div ref={sliderRef} className="keen-slider h-[40rem] sm:h-[59.375rem] max-h-[930px]">
           {/* slide 1 */}
           <div className="keen-slider__slide number-slide1">
             <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
@@ -124,10 +126,6 @@ const Banner = () => {
                   Sketching & <span className="block uppercase md:ml-[7.8125rem] text-black">Painting</span>
                 </motion.h1>
                 <motion.button
-                  onClick={() => {
-                    document.getElementById("name-input").focus();
-                    document.getElementById("book-now")?.scrollIntoView();
-                  }}
                   className="font-josefin text-sm sm:text-base border border-[#ffffff33] px-6 pt-3 pb-2 mt-7 sm:ml-[6.25rem] rounded-full uppercase duration-300 hover:border-white active:scale-90"
                   variants={{
                     initial: {
@@ -152,9 +150,92 @@ const Banner = () => {
             </div>
           </div>
 
-          {/* slide 2 */}
-          <div className="keen-slider__slide number-slide2">
-            <BannerComponent />
+          {/* slide 3 */}
+          <div className="keen-slider__slide number-slide3">
+            <div className="w-fit mx-auto flex flex-col justify-center sm:items-center h-full">
+              <div className="text-[#252525]">
+                <motion.h1
+                  className="text-[3rem] sm:text-[3.9rem] md:text-[4.375rem] leading-[1.2] font-thin font-josefin"
+                  variants={{
+                    initial: {
+                      opacity: 0,
+                      y: 100,
+                    },
+                    animate: {
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 1,
+                      },
+                    },
+                  }}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  Get In Touch <span className="block text-white bg-black">And Get Real</span>
+                </motion.h1>
+                <motion.p
+                  className="max-w-[23.75rem] text-lg font-light tracking-[0.0313rem] leading-[1.875] mt-6 mb-[1.875rem]"
+                  variants={{
+                    initial: {
+                      opacity: 0,
+                      y: 100,
+                    },
+                    animate: {
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 1,
+                      },
+                    },
+                  }}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.
+                </motion.p>
+                <motion.ul
+                  className="max-w-[23.75rem] text-lg font-light tracking-[0.0313rem] leading-[1.875] mt-6 mb-[1.875rem]"
+                  variants={{
+                    initial: {
+                      opacity: 0,
+                      x: -100,
+                    },
+                    animate: {
+                      opacity: 1,
+                      x: 0,
+                      transition: {
+                        duration: 1,
+                        delay: 0.5,
+                      },
+                    },
+                  }}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <li className="flex items-center gap-2">
+                    <FaLocationDot className="text-base" />
+                    Red Street 7654, LA
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaPhone className="text-base" />
+                    <a href="#" className="hover:text-secondary-color duration-300">
+                      0800 987654
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <MdOutlineEmail className="text-base" />
+                    <a href="#" className="hover:text-secondary-color duration-300">
+                      design@gmail.com
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <LuClock className="text-base" />
+                    Monday - Saturday 09:00 - 18:00
+                  </li>
+                </motion.ul>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-10 right-10 md:static">
@@ -188,79 +269,5 @@ function Arrow(props) {
       {props.left && <FaAngleLeft className="btn-arr-child" />}
       {!props.left && <FaAngleRight className="btn-arr-child" />}
     </button>
-  );
-}
-
-function BannerComponent() {
-  return (
-    <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center items-center h-full sm:pt-[7.5rem] md:pt-[17.5rem]">
-      <div className="text-white text-center">
-        <motion.h1
-          className="md:max-w-[60.625rem] mx-auto text-[3.125rem] md:text-[5.625rem] font-bold leading-[3.75rem] md:leading-[6.25rem] tracking-[-0.02rem]"
-          variants={{
-            initial: {
-              opacity: 0,
-              y: -100,
-            },
-            animate: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-              },
-            },
-          }}
-          initial="initial"
-          whileInView="animate"
-        >
-          Your Trusted Private Hire Company
-        </motion.h1>
-        <motion.p
-          className="md:max-w-[31.25rem] text-[#cacaca] mx-auto text-xl md:text-[1.875rem] leading-7 md:leading-[2.5rem] font-medium mt-[2.6875rem] mb-10"
-          variants={{
-            initial: {
-              opacity: 0,
-              y: 100,
-            },
-            animate: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-              },
-            },
-          }}
-          initial="initial"
-          whileInView="animate"
-        >
-          Enjoy a comfortable trip with surtys private hire
-        </motion.p>
-        <motion.button
-          onClick={() => {
-            document.getElementById("name-input").focus();
-            document.getElementById("book-now")?.scrollIntoView();
-          }}
-          className="font-semibold bg-primary-color text-dark text-lg rounded-[2.4375rem] py-[1.3438rem] px-[3.6875rem] duration-[.4s] hover:bg-white active:scale-90"
-          variants={{
-            initial: {
-              opacity: 0,
-              y: -50,
-            },
-            animate: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-                delay: 0.5,
-              },
-            },
-          }}
-          initial="initial"
-          whileInView="animate"
-        >
-          Book Now
-        </motion.button>
-      </div>
-    </div>
   );
 }
