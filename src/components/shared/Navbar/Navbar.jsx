@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineMenu } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo.png";
+import { SlideContext } from "../../../layout/Root";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const slideData = useContext(SlideContext);
+  const slideNo = slideData?.slideNo;
   const navLinks = (
     <>
       <li>
@@ -28,21 +32,21 @@ const Navbar = () => {
     </>
   );
   return (
-    <header className="max-w-[1440px] w-[72%] mx-auto pt-7">
-      <nav className="flex justify-between items-center">
+    <header className="max-w-[1440px] w-[72%] mx-auto">
+      <nav className="fixed z-10  flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
         <div className="max-w-[9.375rem]">
           <img className="w-full" src={logo} alt="Logo" />
         </div>
 
         {/* desktop navigation */}
-        <ul className="desk-nav hidden md:flex gap-[3.125rem] pr-5">{navLinks}</ul>
+        <ul className={`desk-nav hidden md:flex gap-[3.125rem] pr-5 ${slideNo ? "text-black" : "text-white"}`}>{navLinks}</ul>
 
         {/* mobile / tablet navigation */}
         <div className="drawer drawer-end md:hidden">
           <input id="side-nav" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
             {/* Page content here */}
-            <label htmlFor="side-nav" className="flex items-center btn btn-ghost text-base font-normal">
+            <label htmlFor="side-nav" className={`flex items-center btn btn-ghost text-base font-normal ${slideNo ? "text-black" : "text-white"}`}>
               <MdOutlineMenu className="text-3xl" />
               Menu
             </label>
