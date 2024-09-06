@@ -33,7 +33,7 @@ const Navbar = () => {
   );
   return (
     <header className="max-w-[1440px] w-[72%] mx-auto">
-      <nav className="fixed z-10  flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
+      <nav className="absolute z-10  flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
         <div className="max-w-[9.375rem]">
           <img className="w-full" src={logo} alt="Logo" />
         </div>
