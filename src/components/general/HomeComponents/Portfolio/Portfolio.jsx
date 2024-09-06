@@ -69,7 +69,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       <div className="py-10">
-        <SectionHeader />
+        <SectionHeader title="Portfolio" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" />
 
         <div className="flex flex-wrap justify-center items-center gap-7 mt-7 mb-12">
           <button

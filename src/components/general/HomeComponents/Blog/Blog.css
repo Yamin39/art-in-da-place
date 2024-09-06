@@ -1,0 +1,23 @@
+.blog-btn:hover .blog-btn-text {
+  background-color: #fff;
+  color: #a81c51;
+}
+
+.blog-btn:hover .blog-btn-icon {
+  background-color: #a81c51;
+  color: #fff;
+}
+
+.blog-btn:hover .blog-btn-icon::after {
+  background-color: #a81c51;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  font-size: 0.8rem !important;
+  font-weight: 900;
+  padding: 0.8rem 1rem;
+  border-radius: 100%;
+}
