@@ -126,6 +126,7 @@ const Banner = () => {
                   Sketching & <span className="block uppercase md:ml-[7.8125rem] text-black">Painting</span>
                 </motion.h1>
                 <motion.button
+                  onClick={() => document.getElementById("portfolio")?.scrollIntoView()}
                   className="font-josefin text-sm sm:text-base border border-[#ffffff33] px-6 pt-3 pb-2 mt-7 sm:ml-[6.25rem] rounded-full uppercase duration-300 hover:border-white active:scale-90"
                   variants={{
                     initial: {
