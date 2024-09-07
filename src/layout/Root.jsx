@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/shared/Navbar/Navbar";
+import Footer from "../components/shared/Footer/Footer";
 
 export const SlideContext = createContext(null);
 
@@ -11,6 +12,7 @@ const Root = () => {
       <div className="font-fira-sans bg-black text-white">
         <Navbar />
         <Outlet />
+        <Footer />
       </div>
     </SlideContext.Provider>
   );

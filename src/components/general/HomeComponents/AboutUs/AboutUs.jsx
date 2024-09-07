@@ -41,7 +41,7 @@ const AboutUs = () => {
 
           <br />
 
-          <form className="flex mt-4">
+          <form className="flex flex-col sm:flex-row mt-4">
             <input
               type="email"
               className="w-full px-5 py-4 border border-r-0 border-[#333333] bg-[#252525] outline-none focus:border-white duration-300"
