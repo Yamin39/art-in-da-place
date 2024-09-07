@@ -1,3 +1,4 @@
+import AboutUs from "../../components/general/HomeComponents/AboutUs/AboutUs";
 import Banner from "../../components/general/HomeComponents/Banner/Banner";
 import Blog from "../../components/general/HomeComponents/Blog/Blog";
 import Frames from "../../components/general/HomeComponents/Frames/Frames";
@@ -10,6 +11,7 @@ const Home = () => {
       <Portfolio />
       <Blog />
       <Frames />
+      <AboutUs />
     </div>
   );
 };
