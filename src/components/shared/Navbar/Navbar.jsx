@@ -39,14 +39,14 @@ const Navbar = () => {
         </div>
 
         {/* desktop navigation */}
-        <ul className={`desk-nav hidden md:flex gap-[3.125rem] pr-5 ${slideNo ? "text-black" : "text-white"}`}>{navLinks}</ul>
+        <ul className={`desk-nav hidden md:flex gap-[3.125rem] pr-5 ${slideNo === 2 ? "text-black" : "text-white"}`}>{navLinks}</ul>
 
         {/* mobile / tablet navigation */}
         <div className="drawer drawer-end md:hidden">
           <input id="side-nav" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
             {/* Page content here */}
-            <label htmlFor="side-nav" className={`flex items-center btn btn-ghost text-base font-normal ${slideNo ? "text-black" : "text-white"}`}>
+            <label htmlFor="side-nav" className={`flex items-center btn btn-ghost text-base font-normal ${slideNo === 2 ? "text-black" : "text-white"}`}>
               <MdOutlineMenu className="text-3xl" />
               Menu
             </label>

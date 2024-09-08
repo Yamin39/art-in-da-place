@@ -12,8 +12,6 @@ import recentArt6 from "../../../assets/recent/recent-6.jpg";
 const Footer = () => {
   const tags = ["Abstract", "Art", "Artwork", "Canvas", "Design", "Gallery", "Illustration", "Modern", "Painting", "Photography", "Sculpture"];
   const recentImages = [recentArt1, recentArt2, recentArt3, recentArt4, recentArt5, recentArt6];
-
-  // random 3 recent news with title, date, and comment count. title will be "News_title", date will be "17 Nov", comment count will be 0
   const recentNews = [
     { id: 1, title: "Quisque egestas rhoncus mauris", date: "17 Nov", comment: 0 },
     { id: 2, title: "Integer sed condimentum lacus", date: "17 Nov", comment: 0 },

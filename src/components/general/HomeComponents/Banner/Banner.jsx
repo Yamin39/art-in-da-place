@@ -6,6 +6,12 @@ import { useContext, useState } from "react";
 import { FaAngleLeft, FaAngleRight, FaFacebookF, FaLocationDot, FaPhone, FaTwitter } from "react-icons/fa6";
 import { LuClock } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
+import recentArt1 from "../../../../assets/recent/recent-1.jpg";
+import recentArt2 from "../../../../assets/recent/recent-2.jpg";
+import recentArt3 from "../../../../assets/recent/recent-3.jpg";
+import recentArt4 from "../../../../assets/recent/recent-4.jpg";
+import recentArt5 from "../../../../assets/recent/recent-5.jpg";
+import recentArt6 from "../../../../assets/recent/recent-6.jpg";
 import { SlideContext } from "../../../../layout/Root";
 import "./Banner.css";
 
@@ -14,7 +20,21 @@ const Banner = () => {
   const setSlideNo = slideData?.setSlideNo;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  //   console.log(currentSlide);
+  const recentImages = [recentArt1, recentArt2, recentArt3, recentArt4, recentArt5, recentArt6];
+
+  const bottom_to_top = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
 
   const [sliderRef, instanceRef] = useKeenSlider(
     {
@@ -72,7 +92,7 @@ const Banner = () => {
   return (
     <div>
       <div className="relative navigation-wrapper">
-        <div className={`absolute bottom-10 left-10 z-10 duration-300 flex gap-5 ${currentSlide === 1 && "text-black"}`}>
+        <div className={`absolute bottom-10 left-10 z-10 duration-300 flex gap-5 ${currentSlide === 2 && "text-black"}`}>
           <a href="#">
             <FaTwitter />
           </a>
@@ -80,7 +100,7 @@ const Banner = () => {
             <FaFacebookF />
           </a>
         </div>
-        <div ref={sliderRef} className="keen-slider h-[40rem] sm:h-[59.375rem] max-h-[930px]">
+        <div ref={sliderRef} className="keen-slider h-[100dvh] sm:h-[59.375rem] min-h-[51.25rem] max-h-[930px]">
           {/* slide 1 */}
           <div className="keen-slider__slide number-slide1">
             <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
@@ -147,6 +167,50 @@ const Banner = () => {
                 >
                   My portfolio
                 </motion.button>
+              </div>
+            </div>
+          </div>
+
+          {/* slide 2 */}
+          <div className="keen-slider__slide number-slide2">
+            <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
+              <div className="text-white sm:pl-[15rem] md:pl-[21.25rem] mt-8 sm:-mt-24 md:mt-0 sm:ml-6 md:ml-8">
+                <motion.p
+                  className="text-[#777777] text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-8"
+                  variants={bottom_to_top}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  Some of my <span className="text-white">best work</span>
+                </motion.p>
+
+                <div className="mt-5 w-full md:max-w-[37.1875rem] grid gap-3 grid-cols-3">
+                  {recentImages.map((image, index) => (
+                    <motion.a
+                      href="#"
+                      key={index}
+                      className="max-h-[7.8438rem] overflow-hidden"
+                      variants={{
+                        initial: {
+                          opacity: 0,
+                          y: 100,
+                        },
+                        animate: {
+                          opacity: 1,
+                          y: 0,
+                          transition: {
+                            duration: 1,
+                            delay: 0.5 + index * 0.25,
+                          },
+                        },
+                      }}
+                      initial="initial"
+                      whileInView="animate"
+                    >
+                      <img src={image} className="size-full opacity-70 hover:opacity-90 hover:scale-90 duration-300 object-cover" />
+                    </motion.a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
