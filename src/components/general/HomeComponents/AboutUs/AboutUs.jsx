@@ -1,4 +1,4 @@
-import art from "../../../../assets/arts/art-9.jpg";
+import artist from "../../../../assets/arts/art-17.jpg";
 import SectionHeader from "../../../shared/SectionHeader/SectionHeader";
 
 const AboutUs = () => {
@@ -8,7 +8,7 @@ const AboutUs = () => {
 
       <div className="flex flex-col md:flex-row mt-9 gap-10 md:gap-0">
         <div className="md:w-1/2">
-          <img className="md:max-w-[28.75rem]" src={art} alt="Art" />
+          <img className="md:max-w-[28.75rem]" src={artist} alt="Art" />
         </div>
         <div className="md:w-1/2">
           <h1 className="font-thin font-josefin mb-5 text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.0313rem] leading-[1.2]">

@@ -12,6 +12,7 @@ import art18 from "../../../../assets/arts/art-18.jpg"; // category: Nature, fra
 import art19 from "../../../../assets/arts/art-19.jpg"; // category: Abstract, frame: Gold
 import art2 from "../../../../assets/arts/art-2.jpg"; // category: People, frame: Steal
 import art20 from "../../../../assets/arts/art-20.jpg"; // category: People, frame: Silver
+import art22 from "../../../../assets/arts/art-22.jpg"; // category: People, frame: Silver
 import art3 from "../../../../assets/arts/art-3.jpg"; // category: Nature, frame: Wooden
 import art4 from "../../../../assets/arts/art-4.jpg"; // category: Abstract, frame: Gold
 import art5 from "../../../../assets/arts/art-5.jpg"; // category: People, frame: Silver
@@ -45,6 +46,7 @@ const Frames = () => {
     { id: 18, img: art18, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
     { id: 19, img: art19, category: "Abstract", frame: "Gold", title: "Golden Abstraction" },
     { id: 20, img: art20, category: "People", frame: "Silver", title: "Silver Portrait" },
+    { id: 22, img: art22, category: "People", frame: "Silver", title: "Boy Portrait" },
   ];
 
   const frames = [...new Set(arts.map((art) => art?.frame))];
@@ -64,7 +66,9 @@ const Frames = () => {
         </div>
         <div className="md:w-1/2 flex gap-5 flex-wrap justify-center items-center">
           <button
-            className={`pt-4 pb-3 px-6 font-josefin bg-secondary-color duration-300 ${selectedFrames === "All" ? "bg-white text-secondary-color" : ""}`}
+            className={`pt-4 pb-3 px-6 font-josefin bg-secondary-color hover:bg-white hover:text-secondary-color duration-300 ${
+              selectedFrames === "All" ? "bg-white text-secondary-color" : ""
+            }`}
             onClick={() => setSelectedFrames("All")}
           >
             All
@@ -73,7 +77,9 @@ const Frames = () => {
           {frames.map((frame) => (
             <button
               key={frame}
-              className={`pt-4 pb-3 px-6 font-josefin bg-secondary-color duration-300 ${selectedFrames === frame ? "bg-white text-secondary-color" : ""}`}
+              className={`pt-4 pb-3 px-6 font-josefin bg-secondary-color hover:bg-white hover:text-secondary-color duration-300 ${
+                selectedFrames === frame ? "bg-white text-secondary-color" : ""
+              }`}
               onClick={() => {
                 setSelectedFrames(frame);
                 console.log(frame);

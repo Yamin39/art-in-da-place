@@ -16,6 +16,11 @@ import art18 from "../../../../assets/arts/art-18.jpg"; // category: Nature, fra
 import art19 from "../../../../assets/arts/art-19.jpg"; // category: Abstract, frame: Gold
 import art2 from "../../../../assets/arts/art-2.jpg"; // category: People, frame: Steal
 import art20 from "../../../../assets/arts/art-20.jpg"; // category: People, frame: Silver
+import art21 from "../../../../assets/arts/art-21.jpg"; // category: People, frame: Silver
+import art22 from "../../../../assets/arts/art-22.jpg"; // category: People, frame: Gold
+import art23 from "../../../../assets/arts/art-23.jpg"; // category: People, frame: Silver
+import art24 from "../../../../assets/arts/art-24.jpg"; // category: Nature, frame: Steal
+import art25 from "../../../../assets/arts/art-25.jpg"; // category: Abstract, frame: Silver
 import art3 from "../../../../assets/arts/art-3.jpg"; // category: Nature, frame: Wooden
 import art4 from "../../../../assets/arts/art-4.jpg"; // category: Abstract, frame: Gold
 import art5 from "../../../../assets/arts/art-5.jpg"; // category: People, frame: Silver
@@ -28,33 +33,38 @@ import SectionHeader from "../../../shared/SectionHeader/SectionHeader";
 import "./Portfolio.css";
 
 const Portfolio = () => {
-    const [selectedCategory, setSelectedCategory] = useState("All");
-    const [selectedImage, setSelectedImage] = useState(null); // State for selected image
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedImage, setSelectedImage] = useState(null); // State for selected image
 
-    const arts = [
-      { id: 1, img: art1, category: "Nature", frame: "Wooden", title: "Beautiful Landscape" },
-      { id: 2, img: art2, category: "People", frame: "Steal", title: "Portrait Study" },
-      { id: 3, img: art3, category: "Nature", frame: "Wooden", title: "Forest Serenity" },
-      { id: 4, img: art4, category: "Abstract", frame: "Gold", title: "Abstract Harmony" },
-      { id: 5, img: art5, category: "People", frame: "Silver", title: "Elegant Pose" },
-      { id: 6, img: art6, category: "Ghost", frame: "Bronze", title: "Mysterious Presence" },
-      { id: 7, img: art7, category: "Abstract", frame: "Wooden", title: "Artistic Abstraction" },
-      { id: 8, img: art8, category: "People", frame: "Steal", title: "Expressive Gaze" },
-      { id: 9, img: art9, category: "Nature", frame: "Gold", title: "Golden Sunset" },
-      { id: 10, img: art10, category: "Abstract", frame: "Silver", title: "Silver Reflections" },
-      { id: 11, img: art11, category: "People", frame: "Bronze", title: "Bronze Sculpture" },
-      { id: 12, img: art12, category: "Nature", frame: "Wooden", title: "Rustic Beauty" },
-      { id: 13, img: art13, category: "Abstract", frame: "Steal", title: "Steel Creation" },
-      { id: 14, img: art14, category: "People", frame: "Gold", title: "Golden Elegance" },
-      { id: 15, img: art15, category: "Nature", frame: "Silver", title: "Silver Serenade" },
-      { id: 16, img: art16, category: "Abstract", frame: "Bronze", title: "Bronze Expression" },
-      { id: 17, img: art17, category: "People", frame: "Wooden", title: "Wooden Sculpture" },
-      { id: 18, img: art18, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
-      { id: 19, img: art19, category: "Abstract", frame: "Gold", title: "Golden Abstraction" },
-      { id: 20, img: art20, category: "People", frame: "Silver", title: "Silver Portrait" },
-    ];
+  const arts = [
+    { id: 1, img: art1, category: "Nature", frame: "Wooden", title: "Beautiful Landscape" },
+    { id: 2, img: art2, category: "People", frame: "Steal", title: "Portrait Study" },
+    { id: 3, img: art3, category: "Nature", frame: "Wooden", title: "Forest Serenity" },
+    { id: 4, img: art4, category: "Abstract", frame: "Gold", title: "Abstract Harmony" },
+    { id: 5, img: art5, category: "People", frame: "Silver", title: "Elegant Pose" },
+    { id: 6, img: art6, category: "Ghost", frame: "Bronze", title: "Mysterious Presence" },
+    { id: 7, img: art7, category: "Abstract", frame: "Wooden", title: "Artistic Abstraction" },
+    { id: 8, img: art8, category: "People", frame: "Steal", title: "Expressive Gaze" },
+    { id: 9, img: art9, category: "Nature", frame: "Gold", title: "Golden Sunset" },
+    { id: 10, img: art10, category: "Abstract", frame: "Silver", title: "Silver Reflections" },
+    { id: 11, img: art11, category: "People", frame: "Bronze", title: "Bronze Sculpture" },
+    { id: 12, img: art12, category: "Nature", frame: "Wooden", title: "Rustic Beauty" },
+    { id: 13, img: art13, category: "Abstract", frame: "Steal", title: "Steel Creation" },
+    { id: 14, img: art14, category: "People", frame: "Gold", title: "Golden Elegance" },
+    { id: 15, img: art15, category: "Nature", frame: "Silver", title: "Silver Serenade" },
+    { id: 16, img: art16, category: "Abstract", frame: "Bronze", title: "Bronze Expression" },
+    { id: 17, img: art17, category: "People", frame: "Wooden", title: "Wooden Sculpture" },
+    { id: 18, img: art18, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
+    { id: 19, img: art19, category: "Abstract", frame: "Gold", title: "Golden Abstraction" },
+    { id: 20, img: art20, category: "People", frame: "Silver", title: "Silver Portrait" },
+    { id: 21, img: art21, category: "People", frame: "People", title: "Silver Portrait" },
+    { id: 22, img: art22, category: "People", frame: "Gold", title: "Boy Portrait" },
+    { id: 23, img: art23, category: "People", frame: "Silver", title: "Silver Portrait" },
+    { id: 24, img: art24, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
+    { id: 25, img: art25, category: "Abstract", frame: "Silver", title: "Golden Abstraction" },
+  ];
 
-    const categories = [...new Set(arts.map((art) => art?.category))];
+  const categories = [...new Set(arts.map((art) => art?.category))];
 
   // Function to open modal
   const handleImageClick = (image) => {
