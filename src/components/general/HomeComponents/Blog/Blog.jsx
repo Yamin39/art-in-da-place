@@ -70,7 +70,7 @@ const Blog = () => {
             </Swiper>
           </div>
 
-          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center">
+          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">Acrylic</h1>
             <p className="text-sm font-light leading-[1.875] mb-9">
               <strong className="font-bold">Acrylic painting,</strong> technique in which pigments are mixed with hot, liquid wax. After all of the colours have
@@ -87,7 +87,7 @@ const Blog = () => {
 
         {/* blog 2 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
-          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center">
+          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">
               Encaustic
             </h1>
@@ -181,7 +181,7 @@ const Blog = () => {
             </Swiper>
           </div>
 
-          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center">
+          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">
               Oil Painting
             </h1>
@@ -200,7 +200,7 @@ const Blog = () => {
 
         {/* blog 4 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
-          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center">
+          <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">Impasto</h1>
             <p className="text-sm font-light leading-[1.875] mb-9">
               <strong className="font-bold">Impasto,</strong> technique in which pigments are mixed with hot, liquid wax. After all of the colours have been

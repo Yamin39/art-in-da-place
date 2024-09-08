@@ -51,9 +51,9 @@ const Footer = () => {
           </div>
 
           <p className="text-sm leading-[1.875]">
-            Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit
-            enim non justo posuere placerat eget purus mauris.
-            <span className="block mt-5">Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</span>{" "}
+            Patrick Newell’s art journey spans over a decade, evolving from cubism and surrealism to landscapes and portraits. His vibrant, eclectic style is
+            inspired by iconic artists like Monet and Picasso, embracing both structure and creativity.
+            <span className="block mt-5">He constantly reinvents his approach, driven by a deep passion for the act of creation.</span>
           </p>
         </div>
 
