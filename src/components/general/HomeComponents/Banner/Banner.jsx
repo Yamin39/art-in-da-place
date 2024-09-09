@@ -123,7 +123,7 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  Hi, My name is <span className="text-white">Jhon</span> and I love
+                  Hi, MY NAME IS <span className="text-white">PATRICK NEWELL</span> and I love
                 </motion.p>
                 <motion.h1
                   className="sm:-ml-4 text-[3rem] sm:text-[3.9rem] md:text-[4.375rem] leading-[1.2] font-thin font-josefin"
@@ -143,7 +143,7 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  Sketching & <span className="block uppercase md:ml-[7.8125rem] text-black">Painting</span>
+                  MONET & <span className="block uppercase md:ml-[7.8125rem] text-black">PICASSO</span>
                 </motion.h1>
                 <motion.button
                   onClick={() => document.getElementById("portfolio")?.scrollIntoView()}
@@ -165,7 +165,7 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  My portfolio
+                  INSPIRED ART
                 </motion.button>
               </div>
             </div>

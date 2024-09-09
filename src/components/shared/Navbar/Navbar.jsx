@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineMenu } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
+import logoBlack from "../../../assets/images/logo-black.png";
+import logoWhite from "../../../assets/images/logo-white.png";
 import { SlideContext } from "../../../layout/Root";
 import "./Navbar.css";
 
@@ -26,11 +27,11 @@ const Navbar = () => {
     <header className="max-w-[1440px] w-[72%] mx-auto">
       <nav className="absolute z-10  flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
         <div className="max-w-[9.375rem]">
-          <img className="w-full" src={logo} alt="Logo" />
+          <img className="w-full" src={slideNo === 2 ? logoBlack : logoWhite} alt="Logo" />
         </div>
 
         {/* desktop navigation */}
-        <ul className={`desk-nav hidden md:flex gap-[3.125rem] pr-5 ${slideNo === 2 ? "text-black" : "text-white"}`}>{navLinks}</ul>
+        <ul className={`desk-nav hidden md:flex gap-[3.125rem] pr-5`}>{navLinks}</ul>
 
         {/* mobile / tablet navigation */}
         <div className="drawer drawer-end md:hidden">
