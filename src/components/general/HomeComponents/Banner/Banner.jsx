@@ -104,7 +104,7 @@ const Banner = () => {
           {/* slide 1 */}
           <div className="keen-slider__slide number-slide1">
             <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
-              <div className="text-white sm:pl-[15rem] md:pl-[21.25rem] mt-8 text-right sm:text-left sm:-mt-24 md:mt-0">
+              <div className="text-white sm:pl-[11rem] md:pl-[31.25rem] md:w-max mt-8 text-right sm:text-left sm:-mt-[14rem] md:mt-0">
                 <motion.p
                   className="text-[#777777] text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-8 sm:ml-6 md:ml-8"
                   variants={{
@@ -123,10 +123,10 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  Hi, MY NAME IS <span className="text-white">PATRICK NEWELL</span> and I love
+                  Hi, MY NAME IS <span className="text-white">PATRICK NEWELL</span>
                 </motion.p>
                 <motion.h1
-                  className="sm:-ml-4 text-[3rem] sm:text-[3.9rem] md:text-[4.375rem] leading-[1.2] font-thin font-josefin"
+                  className="sm:-ml-4 text-[3rem] sm:text-[3.5rem] md:text-[4.375rem] leading-[1.2] font-thin font-josefin"
                   variants={{
                     initial: {
                       opacity: 0,
@@ -143,11 +143,11 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  MONET & <span className="block uppercase md:ml-[7.8125rem] text-black">PICASSO</span>
+                  MONET AND PICASSO <span className="block uppercase md:ml-[8.8rem] text-black">INSPIRED ART</span>
                 </motion.h1>
                 <motion.button
                   onClick={() => document.getElementById("portfolio")?.scrollIntoView()}
-                  className="font-josefin text-sm sm:text-base border border-[#ffffff33] px-6 pt-3 pb-2 mt-7 sm:ml-[6.25rem] rounded-full uppercase duration-300 hover:border-white active:scale-90"
+                  className="font-josefin text-sm sm:text-base border border-[#ffffff33] px-6 pt-3 pb-2 mt-7 sm:ml-[10.25rem] rounded-full uppercase duration-300 hover:border-white active:scale-90"
                   variants={{
                     initial: {
                       opacity: 0,
@@ -165,7 +165,7 @@ const Banner = () => {
                   initial="initial"
                   whileInView="animate"
                 >
-                  INSPIRED ART
+                  My portfolio
                 </motion.button>
               </div>
             </div>
