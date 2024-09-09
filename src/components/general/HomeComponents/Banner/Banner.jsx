@@ -280,18 +280,18 @@ const Banner = () => {
                 >
                   <li className="flex items-center gap-2">
                     <FaLocationDot className="text-base" />
-                    Red Street 7654, LA
+                    London
                   </li>
                   <li className="flex items-center gap-2">
                     <FaPhone className="text-base" />
-                    <a href="#" className="hover:text-secondary-color duration-300">
-                      0800 987654
+                    <a href="tel:+447788797080" className="hover:text-secondary-color duration-300">
+                      +44 7788 797080
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
                     <MdOutlineEmail className="text-base" />
-                    <a href="#" className="hover:text-secondary-color duration-300">
-                      design@gmail.com
+                    <a href="mailto:thelovepeople@gmail.com" className="hover:text-secondary-color duration-300">
+                      thelovepeople@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
