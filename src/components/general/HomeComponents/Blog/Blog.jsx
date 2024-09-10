@@ -76,7 +76,7 @@ const Blog = () => {
               <strong className="font-bold">Acrylic painting,</strong> technique in which pigments are mixed with hot, liquid wax. After all of the colours have
               been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.
             </p>
-            <button className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
+            <button onClick={() => document.getElementById("portfolio")?.scrollIntoView()} className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
               <span className="blog-btn-icon p-4 h-full bg-white text-xl text-secondary-color relative after:size-4 after:absolute after:bg-white after:translate-y-[-50%] after:top-[50%] after:rotate-45 after:right-[-0.5rem] duration-300 after:duration-300">
                 <GrAnnounce />
               </span>
@@ -86,7 +86,7 @@ const Blog = () => {
         </div>
 
         {/* blog 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
           <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">
               Encaustic
@@ -96,7 +96,7 @@ const Blog = () => {
               have been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform
               film.
             </p>
-            <button className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
+            <button onClick={() => document.getElementById("portfolio")?.scrollIntoView()} className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
               <span className="blog-btn-icon p-4 h-full bg-white text-xl text-secondary-color relative after:size-4 after:absolute after:bg-white after:translate-y-[-50%] after:top-[50%] after:rotate-45 after:right-[-0.5rem] duration-300 after:duration-300">
                 <GrAnnounce />
               </span>
@@ -189,7 +189,7 @@ const Blog = () => {
               <strong className="font-bold">Oil Painting,</strong> technique in which pigments are mixed with hot, liquid wax. After all of the colours have
               been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.
             </p>
-            <button className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
+            <button onClick={() => document.getElementById("portfolio")?.scrollIntoView()} className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
               <span className="blog-btn-icon p-4 h-full bg-white text-xl text-secondary-color relative after:size-4 after:absolute after:bg-white after:translate-y-[-50%] after:top-[50%] after:rotate-45 after:right-[-0.5rem] duration-300 after:duration-300">
                 <GrAnnounce />
               </span>
@@ -199,14 +199,14 @@ const Blog = () => {
         </div>
 
         {/* blog 4 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-16 md:gap-0 mt-8 md:mt-0">
           <div className="max-w-[39.375rem] mx-auto text-center flex flex-col items-center justify-center px-8 sm:px-0">
             <h1 className="mb-5 font-josefin font-thin text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.5px] leading-[1.2]">Impasto</h1>
             <p className="text-sm font-light leading-[1.875] mb-9">
               <strong className="font-bold">Impasto,</strong> technique in which pigments are mixed with hot, liquid wax. After all of the colours have been
               applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.
             </p>
-            <button className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
+            <button onClick={() => document.getElementById("portfolio")?.scrollIntoView()} className="blog-btn flex uppercase duration-300 active:scale-[0.8]">
               <span className="blog-btn-icon p-4 h-full bg-white text-xl text-secondary-color relative after:size-4 after:absolute after:bg-white after:translate-y-[-50%] after:top-[50%] after:rotate-45 after:right-[-0.5rem] duration-300 after:duration-300">
                 <GrAnnounce />
               </span>
