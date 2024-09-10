@@ -129,6 +129,27 @@ const Portfolio = () => {
                   </div>
                 </div>
                 <img className="w-full" src={art.img} alt="Art" />
+
+                <div className="mt-5 md:hidden flex flex-col sm:justify-between sm:items-center sm:flex-row">
+                  <div className="border-l border-r-white pl-8 mb-4">
+                    <a href="#" className="block font-josefin font-light text-xl uppercase tracking-[0.0313rem] leading-none">
+                      {art?.title}
+                    </a>
+                    <a href="#">{art?.category},</a>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <a href="#" className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300">
+                      <GoLink />
+                    </a>
+                    <button
+                      onClick={() => handleImageClick(art.img)}
+                      className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300"
+                    >
+                      <IoIosSearch />
+                    </button>
+                  </div>
+                </div>
               </div>
             ))}
         </div>

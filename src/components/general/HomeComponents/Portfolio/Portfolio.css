@@ -37,22 +37,15 @@
 /* media queries */
 @media (max-width: 768px) {
   .gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-width: 50%;
-    -moz-column-width: 50%;
-    column-width: 50%;
-  }
-}
-
-@media (max-width: 640px) {
-  .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
     -webkit-column-width: 100%;
     -moz-column-width: 100%;
     column-width: 100%;
+  }
+
+  .gallery .pics .overlay {
+    display: none;
   }
 }
