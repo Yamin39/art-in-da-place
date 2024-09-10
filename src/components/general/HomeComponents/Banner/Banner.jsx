@@ -102,11 +102,12 @@ const Banner = () => {
         </div>
         <div ref={sliderRef} className="keen-slider h-[100dvh] sm:h-[59.375rem] min-h-[51.25rem] max-h-[930px]">
           {/* slide 1 */}
-          <div className="keen-slider__slide number-slide1">
-            <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
+          <div className="keen-slider__slide number-slide1 relative">
+            <div className="absolute top-0 bottom-0 right-0 left-0 bg-[#717171] sm:hidden z-[-1] opacity-[0.5]"></div>
+            <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-end sm:justify-center sm:items-center h-full">
               <div className="text-white sm:pl-[11rem] md:pl-[31.25rem] md:w-max mt-8 text-right sm:text-left sm:-mt-[14rem] md:mt-0">
                 <motion.p
-                  className="text-[#777777] text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-8 sm:ml-6 md:ml-8"
+                  className="text-black sm:text-[#777777] text-lg sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-8 sm:ml-6 md:ml-8"
                   variants={{
                     initial: {
                       opacity: 0,
