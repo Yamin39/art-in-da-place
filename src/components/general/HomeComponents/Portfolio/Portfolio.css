@@ -5,6 +5,8 @@
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   column-width: 33%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  */
 }
 
 .gallery .pics {

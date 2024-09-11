@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <header className="max-w-[1440px] w-[72%] mx-auto">
       <nav className="absolute z-10 flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
-        <div className="max-w-[10.5rem]">
+        <div className="max-w-[13rem]">
           <img className="w-full" src={slideNo === 2 ? (window.innerWidth < 640 ? logoWhite : logoBlack) : logoWhite} alt="Logo" />
         </div>
 

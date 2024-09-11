@@ -21,6 +21,7 @@ import art22 from "../../../../assets/arts/art-22.jpg"; // category: People, fra
 import art23 from "../../../../assets/arts/art-23.jpg"; // category: People, frame: Silver
 import art24 from "../../../../assets/arts/art-24.jpg"; // category: Nature, frame: Steal
 import art25 from "../../../../assets/arts/art-25.jpg"; // category: Abstract, frame: Silver
+import art26 from "../../../../assets/arts/art-26.jpg"; // category: People, frame: Bronze
 import art3 from "../../../../assets/arts/art-3.jpg"; // category: Nature, frame: Wooden
 import art4 from "../../../../assets/arts/art-4.jpg"; // category: Abstract, frame: Gold
 import art5 from "../../../../assets/arts/art-5.jpg"; // category: People, frame: Silver
@@ -62,6 +63,7 @@ const Portfolio = () => {
     { id: 23, img: art23, category: "People", frame: "Silver", title: "Silver Portrait" },
     { id: 24, img: art24, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
     { id: 25, img: art25, category: "Abstract", frame: "Silver", title: "Golden Abstraction" },
+    { id: 26, img: art26, category: "People", frame: "Bronze", title: "Lady with yellow hair" },
   ];
 
   const categories = [...new Set(arts.map((art) => art?.category))];
@@ -109,33 +111,18 @@ const Portfolio = () => {
             .map((art) => (
               <div key={art.id} className="pics">
                 <div className="overlay">
-                  <div className="flex gap-2">
-                    <a href="#" className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300">
-                      <GoLink />
-                    </a>
-                    <button
-                      onClick={() => handleImageClick(art.img)}
-                      className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300"
-                    >
-                      <IoIosSearch />
-                    </button>
-                  </div>
-
-                  <div className="text-right border-r border-r-white pr-8">
-                    <a href="#" className="block font-josefin font-light text-xl uppercase tracking-[0.0313rem] leading-none">
-                      {art?.title}
-                    </a>
-                    <a href="#">{art?.category},</a>
-                  </div>
-                </div>
-                <img className="w-full" src={art.img} alt="Art" />
-
-                <div className="mt-5 md:hidden flex flex-col sm:justify-between sm:items-center sm:flex-row">
                   <div className="border-l border-r-white pl-8 mb-4">
                     <a href="#" className="block font-josefin font-light text-xl uppercase tracking-[0.0313rem] leading-none">
                       {art?.title}
                     </a>
-                    <a href="#">{art?.category},</a>
+                    <a href="#" className="tracking-widest font-semibold text-xl">
+                      99$
+                    </a>
+
+                    <p className="text-sm text-[#dbdbdb]">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, incidunt pariatur velit dicta adipisci numquam itaque,
+                      perferendis quos ipsam non labore.
+                    </p>
                   </div>
 
                   <div className="flex gap-2">
@@ -148,6 +135,37 @@ const Portfolio = () => {
                     >
                       <IoIosSearch />
                     </button>
+                  </div>
+                </div>
+                <div>
+                  <img className="w-full" src={art.img} alt="Art" />
+
+                  <div className="mt-5 md:hidden">
+                    <div className="border-l border-r-white pl-8 mb-4">
+                      <a href="#" className="block font-josefin font-light text-xl uppercase tracking-[0.0313rem] leading-none">
+                        {art?.title}
+                      </a>
+                      <a href="#" className="tracking-widest font-semibold text-xl">
+                        99$
+                      </a>
+
+                      <p className="text-sm text-[#dbdbdb]">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, incidunt pariatur velit dicta adipisci numquam itaque,
+                        perferendis quos ipsam non labore accusamus quibusdam ducimus tempore necessitatibus aliquid nobis minus.
+                      </p>
+                    </div>
+
+                    <div className="flex gap-2">
+                      <a href="#" className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300">
+                        <GoLink />
+                      </a>
+                      <button
+                        onClick={() => handleImageClick(art.img)}
+                        className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300"
+                      >
+                        <IoIosSearch />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
