@@ -7,7 +7,6 @@ import art13 from "../../../../assets/arts/art-13.jpg"; // category: Abstract, f
 import art14 from "../../../../assets/arts/art-14.jpg"; // category: People, frame: Gold
 import art15 from "../../../../assets/arts/art-15.jpg"; // category: Nature, frame: Silver
 import art16 from "../../../../assets/arts/art-16.jpg"; // category: Abstract, frame: Bronze
-import art17 from "../../../../assets/arts/art-17.jpg"; // category: People, frame: Wooden
 import art18 from "../../../../assets/arts/art-18.jpg"; // category: Nature, frame: Steal
 import art19 from "../../../../assets/arts/art-19.jpg"; // category: Abstract, frame: Gold
 import art2 from "../../../../assets/arts/art-2.jpg"; // category: People, frame: Steal
@@ -42,7 +41,6 @@ const Frames = () => {
     { id: 14, img: art14, category: "People", frame: "Gold", title: "Golden Elegance" },
     { id: 15, img: art15, category: "Nature", frame: "Silver", title: "Silver Serenade" },
     { id: 16, img: art16, category: "Abstract", frame: "Bronze", title: "Bronze Expression" },
-    { id: 17, img: art17, category: "People", frame: "Wooden", title: "Wooden Sculpture" },
     { id: 18, img: art18, category: "Nature", frame: "Steal", title: "Steel Wilderness" },
     { id: 19, img: art19, category: "Abstract", frame: "Gold", title: "Golden Abstraction" },
     { id: 20, img: art20, category: "People", frame: "Silver", title: "Silver Portrait" },
