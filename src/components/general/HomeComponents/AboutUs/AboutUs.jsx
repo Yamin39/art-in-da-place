@@ -22,6 +22,31 @@ const AboutUs = () => {
           </p>
 
           <br />
+
+          <p className="text-sm font-light leading-[1.875]">
+            The art market is becoming increasingly hybrid. Although the art market has largely returned to its post-pandemic state, with the return of art
+            fairs and gallery shows, it is interesting to note that online sales are continuing to grow. (see appendix 1). Striking a balance between the
+            physical and digital worlds provides a strong business opportunity.
+            <br />
+            <br />
+            Art is a product like no other. It is an asset that can turn a house into a home or is a commodity that can appreciate in value. The UK is the
+            second largest art market in the world taking 18% of a market worth around $68B. (see appendix 2) London represents the largest market in the UK and
+            has a thriving art community.
+            <br />
+            <br />
+            <span className="font-semibold italic">Artindaplace</span> is company and website devoted to art lovers unlike any other service, showcasing a
+            variety of artworks from cubism landscapes portraits and abstract pieces. Delivery is worldwide, however London based customers (and on negotiation
+            home counties) can choose an artwork from the site, arrange a delivery date, see the piece in situ, take advice from the fitter and have the work
+            hung for them at no extra charge.
+            <br />
+            <br />
+            Potentially this service can be rolled out throughout the UK as the company grows.
+            <br />
+            <br />
+            Consultancy can also be arranged digitally.
+          </p>
+
+          <br />
           <br />
 
           <h1 className="font-thin font-josefin mb-5 text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.0313rem] leading-[1.2]">

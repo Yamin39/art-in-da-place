@@ -304,7 +304,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       <div className="py-10">
-        <SectionHeader title="Portfolio" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" />
+        <SectionHeader title="Portfolio" desc="Original fine art delivered to your home and fitted before you pay" />
 
         <div className="flex flex-wrap justify-center items-center gap-7 mt-7 mb-12">
           <button

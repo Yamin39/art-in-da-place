@@ -118,27 +118,27 @@ const Footer = () => {
 
         <ul className="flex gap-12 justify-center items-center text-lg leading-[1.375rem] uppercase mt-9">
           <li>
-            <a href="#">
+            <a href="#" target="_blank">
               <FaYoutube />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" target="_blank">
               <FaFacebook />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/artindaplace" target="_blank">
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" target="_blank">
               <FaTwitter />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" target="_blank">
               <FaLinkedin />
             </a>
           </li>
