@@ -1,4 +1,9 @@
 .desk-nav li .active {
+  /* color: #a81c51; */
+  color: white;
+}
+
+.desk-nav li.home a {
   color: #a81c51;
 }
 
@@ -19,5 +24,10 @@
 }
 
 .mobile-nav li .active {
+  /* background-color: #a81c51 !important; */
+  background-color: transparent !important;
+}
+
+.mobile-nav li .active:active {
   background-color: #a81c51 !important;
 }

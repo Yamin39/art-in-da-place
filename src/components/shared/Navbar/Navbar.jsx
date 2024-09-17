@@ -12,19 +12,26 @@ const Navbar = () => {
   const slideNo = slideData?.slideNo;
   const navLinks = (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
+      <li className="home">
+        <NavLink
+          onClick={() => {
+            document.getElementById("slide1")?.scrollIntoView();
+            document.getElementById("header")?.scrollIntoView();
+          }}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/gallery">Gallery</NavLink>
+        <NavLink onClick={() => document.getElementById("portfolio")?.scrollIntoView()}>Gallery</NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink onClick={() => document.getElementById("contact")?.scrollIntoView()}>Contact</NavLink>
       </li>
     </>
   );
   return (
-    <header className="max-w-[1440px] w-[72%] mx-auto">
+    <header id="header" className="max-w-[1440px] w-[72%] mx-auto">
       <nav className="absolute z-10 flex max-w-[1440px] w-[72%] justify-between items-center pt-7">
         <div className="max-w-[13rem]">
           <img className="w-full" src={slideNo === 2 ? (window.innerWidth < 640 ? logoWhite : logoBlack) : logoWhite} alt="Logo" />

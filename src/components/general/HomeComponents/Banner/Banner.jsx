@@ -102,7 +102,7 @@ const Banner = () => {
         </div>
         <div ref={sliderRef} className="keen-slider h-[100dvh] sm:h-[59.375rem] min-h-[51.25rem] max-h-[930px]">
           {/* slide 1 */}
-          <div className="keen-slider__slide number-slide1 relative">
+          <div id="slide1" className="keen-slider__slide number-slide1 relative">
             <div className="absolute top-0 bottom-0 right-0 left-0 bg-[#717171] sm:hidden z-[-1] opacity-[0.5]"></div>
             <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-end sm:justify-center sm:items-center h-full">
               <div className="text-white sm:pl-[11rem] md:pl-[31.25rem] md:w-max mt-8 text-right sm:text-left sm:-mt-[14rem] md:mt-0">
@@ -221,7 +221,7 @@ const Banner = () => {
           </div>
 
           {/* slide 3 */}
-          <div className="keen-slider__slide number-slide3">
+          <div id="contact" className="keen-slider__slide number-slide3">
             <div className="w-fit mx-auto flex flex-col justify-center sm:items-center h-full">
               <div className="text-[#252525]">
                 <motion.h1
