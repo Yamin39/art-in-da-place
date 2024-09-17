@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useContext, useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaFacebookF, FaLocationDot, FaPhone, FaTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { LuClock } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
 import recentArt1 from "../../../../assets/recent/recent-1.jpg";
@@ -92,12 +93,9 @@ const Banner = () => {
   return (
     <div>
       <div className="relative navigation-wrapper">
-        <div className={`absolute bottom-10 left-10 z-10 duration-300 flex gap-5 ${currentSlide === 2 && "text-black"}`}>
-          <a href="#">
-            <FaTwitter />
-          </a>
-          <a href="#">
-            <FaFacebookF />
+        <div className={`absolute bottom-10 left-10 z-20 duration-300 flex gap-5 ${currentSlide === 2 && "text-black"}`}>
+          <a href="https://www.instagram.com/artindaplace" target="_blank" className="p-2">
+            <FaInstagram />
           </a>
         </div>
         <div ref={sliderRef} className="keen-slider h-[100dvh] sm:h-[59.375rem] min-h-[51.25rem] max-h-[930px]">
@@ -191,8 +189,7 @@ const Banner = () => {
 
                 <div className="mt-5 w-full md:max-w-[37.1875rem] grid gap-3 grid-cols-3">
                   {recentImages.map((image, index) => (
-                    <motion.a
-                      href="#"
+                    <motion.div
                       key={index}
                       className="max-h-[7.8438rem] overflow-hidden"
                       variants={{
@@ -212,8 +209,8 @@ const Banner = () => {
                       initial="initial"
                       whileInView="animate"
                     >
-                      <img src={image} className="size-full opacity-70 hover:opacity-90 hover:scale-90 duration-300 object-cover" />
-                    </motion.a>
+                      <img src={image} className="size-full opacity-70 hover:opacity-90 hover:scale-90 cursor-pointer duration-300 object-cover" />
+                    </motion.div>
                   ))}
                 </div>
               </div>

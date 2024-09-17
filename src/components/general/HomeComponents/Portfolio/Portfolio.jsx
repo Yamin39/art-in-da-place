@@ -1,6 +1,5 @@
 // categories: Nature, People, Abstract. Ghost Frames: Wooden, Steal, Gold, Silver, Bronze
 import { useState } from "react";
-import { GoLink } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import art1 from "../../../../assets/arts/art-1.jpg"; // category: Nature, frame: Wooden
@@ -301,7 +300,7 @@ const Portfolio = () => {
     setSelectedImage(null);
   };
 
-  return ( 
+  return (
     <div id="portfolio">
       <div className="py-10">
         <SectionHeader title="Portfolio" desc="Explore all of my art works" />
@@ -347,9 +346,6 @@ const Portfolio = () => {
                   </div>
 
                   <div className="flex gap-2">
-                    <a href="#" className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300">
-                      <GoLink />
-                    </a>
                     <button
                       onClick={() => handleImageClick(art.img)}
                       className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300"
@@ -375,9 +371,6 @@ const Portfolio = () => {
                     </div>
 
                     <div className="flex gap-2">
-                      <a href="#" className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300">
-                        <GoLink />
-                      </a>
                       <button
                         onClick={() => handleImageClick(art.img)}
                         className="p-3 border rounded-full text-lg hover:text-secondary-color hover:bg-white duration-300"

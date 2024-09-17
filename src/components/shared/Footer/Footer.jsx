@@ -1,6 +1,6 @@
 import { FaInstagram, FaSquareFull } from "react-icons/fa";
-import { LuLink } from "react-icons/lu";
 import { RxBoxModel } from "react-icons/rx";
+import { Link } from "react-router-dom";
 import recentArt1 from "../../../assets/recent/recent-1.jpg";
 import recentArt2 from "../../../assets/recent/recent-2.jpg";
 import recentArt3 from "../../../assets/recent/recent-3.jpg";
@@ -60,12 +60,7 @@ const Footer = () => {
           <div className="grid gap-2 grid-cols-3">
             {recentImages.map((image, index) => (
               <div key={index} className="relative max-h-[5.2131rem]">
-                <div className="absolute flex justify-center items-center size-full bg-secondary-color opacity-0 hover:opacity-100 duration-300">
-                  <a href="#" className="text-white text-xl p-2">
-                    <LuLink />
-                  </a>
-                </div>
-                <img src={image} className="size-full cursor-pointer duration-300 object-cover" />
+                <img src={image} className="size-full duration-300 object-cover" />
               </div>
             ))}
           </div>
@@ -79,13 +74,13 @@ const Footer = () => {
 
           <div className="flex flex-wrap">
             {tags.map((tag, index) => (
-              <a
-                href="#"
+              <Link
+                to="/"
                 key={index}
                 className="text-xs font-light leading-[1.875] bg-[#252525] mr-[0.625rem] mb-[0.625rem] pt-[0.4375rem] pb-[0.375rem] px-[0.9375rem] hover:bg-secondary-color duration-300"
               >
                 {tag}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -94,24 +89,24 @@ const Footer = () => {
       <div className="pt-24 pb-7">
         <ul className="flex gap-12 justify-center items-center text-sm leading-[1.375rem] uppercase">
           <li>
-            <a href="#" className="hover:text-secondary-color duration-300">
+            <Link onClick={() => document.getElementById("contact")?.scrollIntoView()} className="hover:text-secondary-color duration-300">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-secondary-color duration-300">
+            <Link to="/" className="hover:text-secondary-color duration-300">
               Privacy Policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-secondary-color duration-300">
+            <Link to="/" className="hover:text-secondary-color duration-300">
               Terms of use
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-secondary-color duration-300">
+            <Link to="/" className="hover:text-secondary-color duration-300">
               Faq
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -125,8 +120,8 @@ const Footer = () => {
 
         <p className="uppercase text-[#ffffff4d] text-sm font-bold leading-[1.875] text-center mt-9">
           © {new Date().getFullYear()}{" "}
-          <a href="#" className="text-white hover:text-secondary-color duration-300">
-            ArtGallery
+          <a href="/" className="text-white hover:text-secondary-color duration-300">
+            Art in da place
           </a>
           . ALL RIGHTS RESERVED.
         </p>
