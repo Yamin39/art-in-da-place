@@ -45,30 +45,6 @@ const AboutUs = () => {
             <br />
             Consultancy can also be arranged digitally.
           </p>
-
-          <br />
-          <br />
-
-          <h1 className="font-thin font-josefin mb-5 text-[clamp(2.25rem,2.075rem_+_0.875vw,3.125rem)] uppercase tracking-[0.0313rem] leading-[1.2]">
-            Newsletter
-          </h1>
-          <p className="text-sm font-light leading-[1.875]">Subscribe to our newsletter and stay updated.</p>
-
-          <br />
-
-          <form className="flex flex-col sm:flex-row mt-4">
-            <input
-              type="email"
-              className="w-full px-5 py-4 border border-r-0 border-[#333333] bg-[#252525] outline-none focus:border-white duration-300"
-              placeholder="Email"
-            />
-            <button
-              type="submit"
-              className="pt-4 pb-3 px-6 font-josefin bg-secondary-color duration-300 uppercase hover:bg-white hover:text-secondary-color active:scale-75"
-            >
-              Subscribe
-            </button>
-          </form>
         </div>
       </div>
     </div>

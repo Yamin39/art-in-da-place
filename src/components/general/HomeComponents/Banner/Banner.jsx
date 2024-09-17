@@ -177,12 +177,16 @@ const Banner = () => {
             <div className="max-w-[1440px] w-10/12 mx-auto flex flex-col justify-center sm:items-center h-full">
               <div className="text-white sm:pl-[15rem] md:pl-[21.25rem] mt-8 sm:-mt-24 md:mt-0 sm:ml-6 md:ml-8">
                 <motion.p
-                  className="text-[#777777] text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-8"
+                  className="text-[#777777] text-[0.9rem] sm:text-[1rem] md:text-[1.2rem] tracking-wider uppercase font-light mb-2"
                   variants={bottom_to_top}
                   initial="initial"
                   whileInView="animate"
                 >
                   Some of my <span className="text-white">best work</span>
+                </motion.p>
+
+                <motion.p className="text-2xl tracking-wider uppercase font-light mb-7" variants={bottom_to_top} initial="initial" whileInView="animate">
+                  Original fine art delivered to your home and fitted before you pay
                 </motion.p>
 
                 <div className="mt-5 w-full md:max-w-[37.1875rem] grid gap-3 grid-cols-3">

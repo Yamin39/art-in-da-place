@@ -1,5 +1,4 @@
 import { FaInstagram, FaSquareFull } from "react-icons/fa";
-import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
 import { LuLink } from "react-icons/lu";
 import { RxBoxModel } from "react-icons/rx";
 import recentArt1 from "../../../assets/recent/recent-1.jpg";
@@ -118,28 +117,8 @@ const Footer = () => {
 
         <ul className="flex gap-12 justify-center items-center text-lg leading-[1.375rem] uppercase mt-9">
           <li>
-            <a href="#" target="_blank">
-              <FaYoutube />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <FaFacebook />
-            </a>
-          </li>
-          <li>
             <a href="https://www.instagram.com/artindaplace" target="_blank">
               <FaInstagram />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <FaTwitter />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <FaLinkedin />
             </a>
           </li>
         </ul>

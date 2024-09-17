@@ -50,7 +50,7 @@ const Frames = () => {
   const frames = [...new Set(arts.map((art) => art?.frame))];
   return (
     <div className="w-11/12 mx-auto mb-10">
-      <SectionHeader title="Frames" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" />
+      <SectionHeader title="Frames" />
 
       <div className="flex gap-10 md:gap-2 flex-col-reverse md:flex-row mt-10">
         <div className="gallery md:w-1/2">

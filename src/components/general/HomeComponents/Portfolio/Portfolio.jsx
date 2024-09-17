@@ -301,10 +301,10 @@ const Portfolio = () => {
     setSelectedImage(null);
   };
 
-  return (
+  return ( 
     <div id="portfolio">
       <div className="py-10">
-        <SectionHeader title="Portfolio" desc="Original fine art delivered to your home and fitted before you pay" />
+        <SectionHeader title="Portfolio" desc="Explore all of my art works" />
 
         <div className="flex flex-wrap justify-center items-center gap-7 mt-7 mb-12">
           <button

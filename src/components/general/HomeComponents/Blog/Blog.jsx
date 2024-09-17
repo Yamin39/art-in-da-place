@@ -27,7 +27,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 const Blog = () => {
   return (
     <div className="pb-10">
-      <SectionHeader title="Blog" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" />
+      <SectionHeader title="Blog" desc="Latest blogs and updates" />
 
       <div>
         {/* blog 1 */}
