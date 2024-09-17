@@ -124,6 +124,11 @@ const Footer = () => {
             Art in da place
           </a>
           . ALL RIGHTS RESERVED.
+          <br />
+          Developed by{" "}
+          <a href="https://graphicdigital.co.uk/" target="_blank" className="text-white hover:text-secondary-color duration-300">
+            Graphic Digital
+          </a>
         </p>
       </div>
     </footer>
