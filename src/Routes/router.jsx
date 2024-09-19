@@ -4,11 +4,11 @@ import Home from "../Pages/Home/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/lander",
+    path: "/",
     element: <Root></Root>,
     children: [
       {
-        path: "/lander",
+        path: "/",
         element: <Home />,
       },
     ],
