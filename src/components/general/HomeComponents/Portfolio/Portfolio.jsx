@@ -81,7 +81,7 @@ const Portfolio = () => {
       img: art5,
       category: "People",
       frame: "Silver",
-      title: "Marie Clare",
+      title: "Marie Claire",
       description: "Oil on canvas, painted by Patrick Newell",
       price: "92000",
       size: "91cm by 65cm",
